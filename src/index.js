@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Link } from "react-router-dom"
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css'
-import App from './App';
+// import App from './App';
 import { Navbar } from './component/navbar';
 import { Container } from './component/container';
 import { Dashboard } from './component/dashboard';
 import * as serviceWorker from './serviceWorker';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+library.add(fas)
 
 ReactDOM.render(
   <BrowserRouter>
@@ -18,8 +21,6 @@ ReactDOM.render(
     </Container >
   </BrowserRouter>,
   document.getElementById('root')
-  // <h1>Hello, World! </h1>, 
-  // document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
